@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NataWest - Najszybsza dostawa towarów w Polsce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Header -->
+        <header class="header">
+            <img src="logo_NataWest.png" alt="NataWest Logo" class="logo-1">
+            
+            <nav class="nav-1" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" data-key="nav.home">Główna</a></li>
+                    <li><a href="#about" data-key="nav.about">O nas</a></li>
+                    <li><a href="#services" data-key="nav.services">Nasze usługi</a></li>
+                    <li><a href="#contact" data-key="nav.contact">Łączność</a></li>
+                </ul>
+            </nav>
+            
+            <div class="languages">
+                <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+                <button class="lang-btn active" data-lang="pl" aria-label="Polski">PL</button>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <h1 class="hero-title" data-key="hero.title">NAJSZYBSZA I NAJWYŻSZA DOSTAWA TOWARÓW W POLSCE</h1>
+            <div class="line-1"></div>
+            
+            <!-- Company Intro -->
+            <div class="company-name-1" data-key="hero.brand">NataWest</div>
+            <div class="company-text">
+                <p data-key="hero.description">Firma, której możesz zaufać. Wybór, którego nie pożałujesz.</p>
+            </div>
+            <button class="button-1" data-key="hero.cta">Dowiedz się więcej</button>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <h2 class="about-title" data-key="about.heading">O NAS</h2>
+            <div class="about-company-name" data-key="about.brand">NataWest</div>
+            <div class="about-description">
+                <p data-key="about.paragraph1">to nowoczesna firma e‑commerce zajmująca się sprzedażą i dystrybucją towarów przez internet. Współpracujemy z największymi marketplace'ami, takimi jak Allegro i Amazon, a także rozwijamy własne kanały sprzedaży online.</p>
+                <p data-key="about.paragraph2">Łączymy producentów, dostawców i klientów w jeden sprawny system sprzedaży internetowej, oferując zarówno sprzedaż detaliczną, jak i hurtową oraz elastyczne formy współpracy.</p>
+                <p data-key="about.paragraph3">Dzięki doświadczeniu w imporcie, eksporcie i sprzedaży online skutecznie wprowadzamy produkty na rynek i pomagamy partnerom rozwijać sprzedaż w internecie.</p>
+            </div>
+            <div class="line-2"></div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <h2 class="services-title" data-key="services.heading">NASZE USŁUGI</h2>
+            <div class="services-group">
+                <ul class="services-list">
+                    <li data-key="services.item1">HANDEL DETALICZNY ONLINE (E-COMMERCE)</li>
+                    <li data-key="services.item2">POŚREDNICTWO W SPRZEDAŻY TOWARÓW RÓŻNEGO ASORTYMENTU</li>
+                    <li data-key="services.item3">HURTOWY HANDEL ELEKTRONIKĄ UŻYTKOWĄ</li>
+                    <li data-key="services.item4">HURTOWY HANDEL INNYMI TOWARAMI</li>
+                    <li data-key="services.item5">HANDEL HURTOWY NIESPECJALISTYCZNY</li>
+                    <li data-key="services.item6">INNY HANDEL DETALICZNY POZA SKLEPAMI</li>
+                    <li data-key="services.item7">TRANSPORT I LOGISTYKA (MOŻLIWOŚĆ DOSTAWY TOWARÓW)</li>
+                </ul>
+            </div>
+            <div class="line-3"></div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2 class="contact-title" data-key="contact.heading">ŁĄCZNOŚĆ</h2>
+            <div class="contacts-group">
+                <img src="contacts_base.png" alt="Contact background" class="contacts-base">
+                <div class="contact-info">
+                    <p>Email: natawest23@gmail.com</p>
+                    <p>Telegram: +48 690 130 305</p>
+                    <p>WhatsApp: +48 690 130 305</p>
+                    <p>Godziny otwarcia: 8:00 - 16:00</p>
+                </div>
+            </div>
+            <div class="line-4"></div>
+            
+            <!-- Contact Description and Form -->
+            <div class="contact-text">
+                <h3 data-key="form.heading">Masz pytania lub chcesz złożyć wniosek?</h3>
+                <p data-key="form.subheading">Wypełnij krótki formularz po prawej stronie — zajmie to tylko chwilę. Nasz specjalista skontaktuje się z Tobą tak szybko, jak to możliwe, aby odpowiedzieć na wszystkie pytania i pomóc w kolejnym kroku.</p>
+            </div>
+            
+            <form class="form" id="contactForm">
+                <h4 data-key="form.formTitle">Zostaw prośbę</h4>
+                <input type="text" name="name" placeholder="Twoje imię" data-key-placeholder="form.namePlaceholder" required>
+                <input type="email" name="email" placeholder="Twoja poczta" data-key-placeholder="form.emailPlaceholder" required>
+                <input type="tel" name="phone" placeholder="Twój numer telefonu" data-key-placeholder="form.phonePlaceholder" required>
+                <input type="text" name="service" placeholder="Jakiej usługi potrzebujesz?" data-key-placeholder="form.servicePlaceholder" required>
+                <button type="submit" data-key="form.submit">Wysłać</button>
+            </form>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <img src="map.png" alt="Map" class="map-image">
+            <div class="address">
+                <p data-key="map.addressLine1">Adres fizyczny: Ul.Kawaleryjska 17A/lokal 6</p>
+                <p data-key="map.addressLine2">15-324, Białystok</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-base"></div>
+            <div class="legal-info">
+                <p data-key="footer.companyName">NataWest spółka z ograniczoną odpowiedzialnością</p>
+                <p data-key="footer.email">Email: natawest23@gmail.com</p>
+                <p data-key="footer.address">15-324 BIAŁYSTOK, ul. KAWALERYJSKA 18B/6</p>
+                <p data-key="footer.copyright">© 2023 NataWest sp. z o.o.</p>
+            </div>
+            
+            <div class="offer-group">
+                <h4 data-key="footer.contactLabel">Numer kontaktowy</h4>
+                <a href="tel:+48690130305" data-key="footer.contactNumber">+48 690 130 305</a>
+                <div class="social-icons">
+                    <a href="https://wa.me/48690130305" target="_blank" aria-label="WhatsApp">
+                        <img src="free-icon-whatsapp-1384023.png" alt="WhatsApp" class="whatsapp">
+                    </a>
+                    <a href="https://t.me/48690130305" target="_blank" aria-label="Telegram">
+                        <img src="free-icon-communication-13266190.png" alt="Telegram" class="telegram">
+                    </a>
+                </div>
+            </div>
+            
+            <nav class="nav-2" aria-label="Footer navigation">
+                <ul>
+                    <li><a href="#home" data-key="nav.home">Główna</a></li>
+                    <li><a href="#about" data-key="nav.about">O nas</a></li>
+                    <li><a href="#services" data-key="nav.services">Nasze usługi</a></li>
+                    <li><a href="#contact" data-key="nav.contact">Łączność</a></li>
+                </ul>
+            </nav>
+            
+            <img src="logo_NataWest.png" alt="NataWest Logo" class="logo-2">
+            
+            <div class="footer-legal">
+                <a href="#" data-key="footer.privacy">Polityka prywatności</a>
+                <img src="line-2-1.svg" alt="Separator" class="separator">
+                <a href="#" data-key="footer.terms">Umowa użytkownika</a>
+                <img src="line-2-1.svg" alt="Separator" class="separator">
+                <a href="#" data-key="footer.dataProcessing">Przetwarzanie danych osobowych</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal Overlays -->
+    <div id="applicationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <h3 data-key="modal.applicationTitle">Zostaw prośbę</h3>
+                <form id="applicationForm">
+                    <input type="text" name="name" placeholder="Twoje imię" data-key-placeholder="modal.fullName" required>
+                    <input type="email" name="email" placeholder="Twoja poczta" data-key-placeholder="modal.email" required>
+                    <input type="tel" name="phone" placeholder="Twój numer telefonu" data-key-placeholder="modal.phone" required>
+                    <input type="text" name="service" placeholder="Jakiej usługi potrzebujesz?" data-key-placeholder="modal.description" required>
+                    <button type="submit" data-key="modal.submit">Wysłać</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="doneModal" class="modal">
+        <div class="modal-content done-modal">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                        <circle cx="30" cy="30" r="30" fill="#4CAF50"/>
+                        <path d="M25 30L28 33L35 26" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h3 data-key="modal.doneTitle">Dziękujemy za zaufanie!</h3>
+                <p data-key="modal.doneMessage">Nasz specjalista wkrótce się z Tobą skontaktuje.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

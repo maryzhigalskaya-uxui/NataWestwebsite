@@ -1,0 +1,1 @@
+export { DesktopNatawestPl } from "./DesktopNatawestPl";

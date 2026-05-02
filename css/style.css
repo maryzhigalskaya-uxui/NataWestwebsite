@@ -1,0 +1,704 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: auto;
+    background: #fff;
+}
+
+/* Main Container - Exact Figma Dimensions */
+.main-container {
+    position: relative;
+    width: 1920px;
+    height: 4300px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+/* Header Elements */
+.logo-1 {
+    position: absolute;
+    left: 40px;
+    top: 41px;
+    z-index: 10;
+    height: 78px;
+    width: auto;
+}
+
+.nav-1 {
+    position: absolute;
+    left: 624px;
+    top: 40px;
+    z-index: 10;
+    background: #011938;
+    border-radius: 45px;
+    padding: 20px 60px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 38px;
+    align-items: center;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    transition: opacity 0.3s ease;
+}
+
+.nav-list a:hover {
+    opacity: 0.8;
+}
+
+.languages {
+    position: absolute;
+    left: 1712px;
+    top: 44px;
+    z-index: 10;
+    background: #011938;
+    border-radius: 45px;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 45px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-btn.active {
+    background: white;
+    color: black;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 1080px;
+    background-image: url('https://img2.akspic.ru/crops/7/4/8/0/80847/80847-sinij-liniya-atmosfera-angle-svet-3840x2160.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Hero Section */
+.hero-title {
+    position: absolute;
+    left: 120px;
+    top: 250px;
+    z-index: 3;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 96px;
+    font-weight: 300;
+    line-height: 1.1;
+    max-width: 1674px;
+}
+
+.line-1 {
+    position: absolute;
+    left: 0px;
+    top: 496px;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 3;
+}
+
+.company-name-1 {
+    position: absolute;
+    left: 122px;
+    top: 536px;
+    z-index: 3;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    width: 238px;
+}
+
+.company-text {
+    position: absolute;
+    left: 974px;
+    top: 536px;
+    z-index: 3;
+    max-width: 423px;
+}
+
+.company-text p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.05;
+    margin-bottom: 24px;
+}
+
+.button-1 {
+    position: absolute;
+    left: 974px;
+    top: 733px;
+    z-index: 3;
+    background: linear-gradient(90deg, #011938 0%, #010bd4 32%, #010bd4 53%, #010bd4 72%, #011938 100%);
+    border: none;
+    border-radius: 45px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 18px 40px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-1:hover {
+    opacity: 0.95;
+}
+
+/* About Section */
+.about-title {
+    position: absolute;
+    left: 624px;
+    top: 1161px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about-company-name {
+    position: absolute;
+    left: 114px;
+    top: 1285px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    font-style: italic;
+    background: linear-gradient(90deg, #011938 0%, #3b6d91 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    width: 346px;
+}
+
+.about-description {
+    position: absolute;
+    left: 624px;
+    top: 1285px;
+    max-width: 1151px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.about-description p {
+    margin-bottom: 8px;
+}
+
+.line-2 {
+    position: absolute;
+    left: 0px;
+    top: 1670px;
+    width: 100%;
+    height: 1px;
+    background: #8d8d8d;
+}
+
+/* Services Section */
+.services-title {
+    position: absolute;
+    left: 624px;
+    top: 1751px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.services-group {
+    position: absolute;
+    left: 424px;
+    top: 1845px;
+    width: 1072px;
+    background: rgba(1, 25, 56, 0.3);
+    border-radius: 60px;
+    padding: 30px 200px;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.services-list li {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    padding: 17px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.services-list li:first-child {
+    font-weight: 500;
+}
+
+.services-list li:last-child {
+    border-bottom: none;
+}
+
+.line-3 {
+    position: absolute;
+    left: 0px;
+    top: 2495px;
+    width: 100%;
+    height: 1px;
+    background: #8d8d8d;
+}
+
+/* Contact Section */
+.contact-title {
+    position: absolute;
+    left: 634px;
+    top: 2527px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contacts-group {
+    position: absolute;
+    left: 0px;
+    top: 2580px;
+    width: 100%;
+    height: 300px;
+}
+
+.contacts-base {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.contact-info {
+    position: absolute;
+    left: 634px;
+    top: 50px;
+    z-index: 5;
+}
+
+.contact-info p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    line-height: normal;
+}
+
+.line-4 {
+    position: absolute;
+    left: 0px;
+    top: 2880px;
+    width: 100%;
+    height: 1px;
+    background: #8d8d8d;
+}
+
+.contact-text {
+    position: absolute;
+    left: 200px;
+    top: 3006px;
+    max-width: 622px;
+}
+
+.contact-text h3 {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contact-text p {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.form {
+    position: absolute;
+    left: 1060px;
+    top: 2941px;
+    width: 600px;
+    background: #1e1e1e;
+    border-radius: 60px;
+    padding: 40px 100px 60px;
+    min-height: 660px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form h4 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 92px;
+}
+
+.form input {
+    width: 100%;
+    height: 52px;
+    background: white;
+    border: none;
+    border-radius: 45px;
+    padding: 0 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+.form input::placeholder {
+    color: #8b8b8b;
+}
+
+.form button {
+    background: white;
+    border: none;
+    border-radius: 45px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 40px;
+    cursor: pointer;
+    margin-top: 86px;
+    min-width: 260px;
+    transition: background 0.3s ease;
+}
+
+.form button:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* Map Section */
+.map-image {
+    position: absolute;
+    left: 0px;
+    top: 3681px;
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+}
+
+.address {
+    position: absolute;
+    left: 40px;
+    top: 3983px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 16px 20px;
+    z-index: 5;
+}
+
+.address p {
+    color: #011938;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.address p:last-child {
+    font-weight: 400;
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    left: 0px;
+    top: 4071px;
+    width: 100%;
+    height: 200px;
+    background: #011938;
+}
+
+.legal-info {
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    color: white;
+}
+
+.legal-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.offer-group {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.offer-group h4 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.offer-group a {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.whatsapp,
+.telegram {
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.3s ease;
+}
+
+.whatsapp:hover,
+.telegram:hover {
+    opacity: 0.8;
+}
+
+.nav-2 {
+    position: absolute;
+    left: 1581px;
+    top: 41px;
+}
+
+.nav-2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-2 a {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.nav-2 a:hover {
+    opacity: 0.8;
+}
+
+.logo-2 {
+    position: absolute;
+    left: 1773px;
+    top: 60px;
+    width: 112px;
+    height: 80px;
+}
+
+.footer-legal {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-legal a {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.separator {
+    width: 1px;
+    height: 12px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+    margin: 5% auto;
+    padding: 40px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    animation: modalSlideIn 0.3s ease-out;
+    color: white;
+}
+
+.modal-content.done-modal {
+    background: white;
+    color: #333;
+    text-align: center;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.done-modal .close {
+    color: #333;
+}
+
+.close:hover {
+    opacity: 0.7;
+}
+
+.modal-body {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.modal-body h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.modal-body form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal-body input {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background: white;
+    color: #333;
+}
+
+.modal-body input::placeholder {
+    color: #8b8b8b;
+}
+
+.modal-body button {
+    background: #010bd4;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.modal-body button:hover {
+    background: #0109b8;
+}
+
+.success-icon {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.done-modal .modal-body p {
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
